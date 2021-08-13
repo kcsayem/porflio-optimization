@@ -6,7 +6,9 @@ This is the project done in the course Advanced Investment Science. Here I had m
         Bonds: 10 years US Treasury Bonds
         Data from 2009 to 2017 were used to make portfolios.
         Data of 2018 were used to test the portfolios
-        Investment was done in year 2019. 
+        Investment was done in year 2019.
+        Data is collected from yahoo finance. 
+        (I ignored data after 2019 data due to the volatile nature of stock for covid 19 situation)
 
 ### Overall portfolio Report
         Portfolio 1: 
@@ -27,6 +29,16 @@ This is the project done in the course Advanced Investment Science. Here I had m
 
 - Return was calculated using log return.
 - Standard deviation is taken as the risk parameter.
+
+**For the first portfolio, I have used Robust portfolio optimization, as the client wanted an investment with minimal risk.**
+ - In portfolio 1, I have added bonds as client wanted it to be least risky. 
+ 
+ **Return Data Frame:**
+
+![Screenshot](screenshots/return-data-frame.png)
+
+
+This is the return data frame & last column is the 10 years US treasury bond.
 
 
 
