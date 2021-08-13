@@ -40,5 +40,6 @@ This is the project done in the course Advanced Investment Science. Here I had m
 
 This is the return data frame & last column is the 10 years US treasury bond.
 
+**Equation of Robust Portfolios under box uncertainity**
 
-
+![Screenshot](screenshots/robust-theory.png)
