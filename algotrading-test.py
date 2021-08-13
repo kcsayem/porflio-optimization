@@ -1,6 +1,6 @@
 import backtrader as bt
 from datetime import datetime, timedelta, date
-from algorithimic-trading-backtrading_test import RSIStrategy, SMAStrategy, TestStrategy
+from algorithimic-trading-backtrading import RSIStrategy, SMAStrategy, TestStrategy
 import pandas as pd
 import datetime  # For datetime objects
 import os.path  # To manage paths

@@ -138,14 +138,14 @@ strategies used are given below,
 
 I basically used two strategy in algorithmic trading. Making buy & signal using RSI & Simple moving
 average crossover, I tried to make the trade. To test the trading strategy I have used backtrading library.
-Codes are following, (For all code please check `algorithimic-trading-backtrading_test.py` file)
+Codes are following, (For all code please check `algorithimic-trading-backtrading.py` file)
 
 ![Screenshot](screenshots/rsi.png)
 
 Here, is the code of RSI. To use backtrader to test the algorithmic trading strategy, we need to use the
 object oriented programming. We need to inherit the strategy class of backtrader to the class of RSI. So,
 few variables shown in the screenshot are from the strategy class of backtrader. (Whole code is too long
-to be shown in screenshot, I will be mentioning the important parts. For all code please check `algorithimic-trading-backtrading_test.py` file) 
+to be shown in screenshot, I will be mentioning the important parts. For all code please check `algorithimic-trading-backtrading.py` file) 
 
 
 
@@ -162,7 +162,7 @@ stock, we will sell the stock regardless.
 
 In this strategy, if short moving average & long moving average cross each other we create a buy signal.
 Short moving average period is 10 & for long its 50. And if the holding period is more than 10, we exit
-the position of holding. For code please check `algorithimic-trading-backtrading_test.py` file.
+the position of holding. For code please check `algorithimic-trading-backtrading.py` file.
 
 **Result of Algorithmic Trading:**
 
