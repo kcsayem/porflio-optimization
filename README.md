@@ -43,3 +43,38 @@ This is the return data frame & last column is the 10 years US treasury bond.
 **Equation of Robust Portfolios under box uncertainity**
 
 ![Screenshot](screenshots/robust-theory.png)
+
+**Implementation of Robust Portfolios**
+
+![Screenshot](screenshots/implementation-robust.png)
+
+Here is the code been used to do the robust portfolio optimization. Points to be noticed here, in the
+robust_opt function there are **two parameters tuner & lambda 0** which are used to **optimize value of
+delta & lambda** later. mu, Sigma & delta have been calculated using the functions below,
+
+
+![Screenshot](screenshots/helper-robust-theory.png)
+
+To optimize the robust portfolio, i.e. finding the optimal value for the tuner & lambda 0 following code
+was used,
+
+![Screenshot](screenshots/optimize-robust-theory.png)
+
+First, I took values for lamda & tuner to test in the range of 0.1 to 3 with 0.1 difference. Then I ran a loop
+using these value & saved the expected return & standard deviation in a pandas data frame.
+
+![Screenshot](screenshots/robust-theory-optimization-result.png)
+
+After that, I sorted the value where we can get the most expected return with least possible standard
+deviation. So, I took the 1st row’s value for tuner & lamda shown in the screenshot. That gave following weights for stocks & bonds
+
+![Screenshot](screenshots/robust-theory-weights.png)
+
+After taking the mentioned lambda & tuner, robust optimization almost assigned 99% of the weight in
+the stocks. The value was similar almost in every case of the value of lambda & tuner.
+
+To test the portfolio strategy & simulate return for the portfolio, I have used empyrial library. Simulated
+return for next 156 days after 2017 December 31st is given below,
+
+![Screenshot](screenshots/robust-theory-pred.png)
+
